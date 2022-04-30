@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lamg="en">
+<head>
+  <title>Krishna</title>
+<style>
+  body {background:url("img.png");
+  background-repeat: no-repeat;
+  object-fit:cover ;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0e15eb;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #aa4104;
+}
+.active {
+  background-color: #aa4104;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.container{
+  float:right;
+padding: 6px;
+background-color: #0e15eb;
+/* border: 2px solid red; */
+}
+</style>
+</head>
+<body>
+
+<h1>www.Jobdhundho.com</h1>
+<div class="container">
+ <button class="btn"><a href="login.html" class="href">Log in</a></button>
+  </div>
+<h3>In this website we can find better Job</h3>
+
+<ul>
+ <li><a class="active" href="https://www.facebook.com" target="_blank"> Home </a> </li>
+  <li class="dropdown"><a href="#" class="dropbtn">Services</a>
+    <div class="dropdown-content">
+      <a href="#">Bank</a>
+      <a href="#">IT</a>
+      <a href="#">Marketing</a>
+    </div>
+   <li><a href="#contact">Contact</a></li>
+   <li><a href="#about">AboutUs</a></li>
+</ul>
+<h3>Sign Up using below Info.</h3><br>
+<form>
+  <fieldset>
+    <legend>EmpDetails:</legend>
+  <lable for="empname"><b>First Name:-</b></lable>
+  <input type="'text" id="empname" name="empname" required><br><br>
+  <lable for="emplname"><b>Last Name:-</b></lable>
+  <input type="'text" id="emplname" name="emplname" required><br><br>
+  <label for="email"><b>Enter Email:</b></label>
+  <input type="email" id="email" name="email"><br>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd"><br><br>
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+  <label for="birthday">DOB:</label>
+  <input type="date" id="birthday" name="birthday"><br>
+
+  <lable for="empstatus"><b>Employement Status</b></lable><br>
+  <input type="radio" name="exp" value="Employed">Employed<br>
+  <input type="radio" name="exp" value="Unemployed">Unemployed<br>
+  <input type="radio" name="exp" value="student">Student<br>
+
+  <lable for="jobty"><b>Job Type</b></lable><br>
+  <input type="checkbox" name="fl">FullTime<br>
+  <input type="checkbox" name="pt">PartTime<br>
+  <input type="checkbox" name="ct">Contract<br>
+
+  <lable for="explevel"><b>Experience Level</b></lable><br>
+  <select name="exp">
+  <option value="el">Entry Level</option>  
+  <option value="se">Some Experience</option> 
+  <option value="ge">Good Experience</option><br>
+   <select>
+ <br> <lable for="position"><b>Position</b></lable><br>
+  <select name="position">
+  <option value="ac">accountant</option>  
+  <option value="mkt">Marketing</option> 
+  <option value="ge">HR</option> 
+  </select>
+<br>
+
+<lable for="adcomm"><b>Additional comments</b></lable><br>
+<textarea name="comments" cols="45" rows="'5"></textarea><br>
+<label for="myfile">Select a file<b>/</b>select your Resume:</label>
+<input type="file" id="myfile" name="myfile"><br><br>
+<input type="submit" name="submit" value="submit">
+<input type="reset" name="rset" value="reset">
+
+<button type="button" onclick="alert('!he bhai, job dhundana itna aasan nahi')">Click Me!</button>
+</fieldset>
+</form>
+
+</body>
+</html>
